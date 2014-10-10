@@ -1,0 +1,46 @@
+#cont{margin-left:12px;margin-top:-16px;}
+
+.theme-default #slider {
+    margin:-20px auto 0 auto;
+    width:400px; 
+    height:270px; 
+}
+.theme-pascal.slider-wrapper,
+.theme-orman.slider-wrapper {
+    margin-top:100px;
+}
+
+
+.clear {
+	clear:both;
+}
+
+#nav{margin-top:-7px;}
+
+#nav ul{list-style:none;padding:0;margin:0;}
+
+#nav ul li a{text-decoration:none;border-bottom:1px solid white;display:block;line-height:40px;width:200px;text-align:center;color:white;font:georgia;font-weight:bold;}
+
+#nav ul li a:hover{background-color:#0e6699;}
+
+#info{background:url(info.png)no-repeat #0e6699;}
+#kolizeum {background:url(colosseum.png)no-repeat #0e6699;}
+#tadj{background:url(tadj.png)no-repeat #0e6699;}
+#machu{background:url(machu_pikchu.png)no-repeat #0e6699;}
+#redeemer{background:url(redeemer.png)no-repeat #0e6699;}
+#chichen{background:url(chichen_itza.png)no-repeat #0e6699;}
+#stena{background:url(china.png)no-repeat #0e6699;}
+#petra{background:url(petra.png)no-repeat #0e6699;}
+.colosseum  a:hover{background:url(colosseum.png)no-repeat;}
+.taj a:hover{background:url(tadj.png)no-repeat;}
+.machu_picchu a:hover{background:url(machu_pikchu.png)no-repeat;}
+.redeemer a:hover{background:url(redeemer.png)no-repeat;}
+.chichen_itza a:hover{background:url(chichen_itza.png)no-repeat;}
+.china a:hover{background:url(china.png)no-repeat;}
+.petra a:hover{background:url(petra.png)no-repeat;}
+.info a:hover{background:url(info.png)no-repeat;}
+
+a {color:yellow;text-decoration:underline;}
+a:hover{text-decoration:none;}
+
+#top-link	{  position:fixed; right:5px; bottom:5px;}
