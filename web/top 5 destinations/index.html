@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Top 5 vacation places - Europe</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/mobilymap.js" type="text/javascript"></script>
+<script src="js/init.js" type="text/javascript"></script>
+<script>
+ 
+	
+	$(document).ready(function(){
+                $(".pl").mouseover(function() {  
+                    $(this).find("ul").stop(true, true).slideDown();  
+                });  
+                          
+              
+                $(".pl").mouseleave(function() {  
+                    $(this).find("ul").stop(true, true).slideUp();  
+                }); 
+				  $(".gl").mouseover(function() {  
+                    $(this).find("ul").stop(true, true).slideDown();  
+                });  
+                          
+              
+                $(".gl").mouseleave(function() {  
+                    $(this).find("ul").stop(true, true).slideUp();  
+                }); 
+
+   
+  
+});
+</script>
+</head>
+<body>
+	<div id="wrapper">
+		<a href="index.html"><div id="logo"></div></a>
+			<div id="nav">
+				<ul>
+					<li><a href="intex.html">Home</a>
+					<li class="pl"><a href="#">Places</a>
+						<ul>
+							<li><a href="paris.html">Paris</a>
+							<li><a href="barcelona.html">Barcelona</a>
+							<li><a href="santorini.html">Santorini</a>
+							<li><a href="venice.html">Venice</a>
+							<li><a href="zermatt.html">Zermatt</a>
+						</ul>	
+					<li class="gl"><a href="#">Gallery</a>	
+						<ul>
+							<li><a href="paris_gallery.html">Paris</a>
+							<li><a href="barcelona_gallery.html">Barcelona</a>
+							<li><a href="santorini_gallery.html">Santorini</a>
+							<li><a href="venice_gallery.html">Venice</a>
+							<li><a href="zermatt_gallery.html">Zermatt</a>
+						</ul>				
+					<li><a href="contact.html">Contact</a>
+					</ul>
+				</div>
+				<div id="info">
+				<p>Welcome to our website! We can help with your choice where to spend your holiday.
+				Here you can find information about the hotels, museums, restaurants, enterteinemnts, photos of the chosen place from you. We hope this website to be helpful for you!<br/><br/><br/>
+				Please choose a place on the map below:</p></div>
+				<div id="map">
+				
+			<img src="img/europe_map.jpg" alt="Europe Map" width="1000" height="700" />
+			<div class="point" id="p-250-400">
+				<span>Paris<img src="flags/france.png" alt="" /></span>
+				<p>Paris is the capital and largest city of France. It is situated on the river Seine, in northern France, at the heart of the Ile-de-Franceregion. The city of Paris, within its...</p>
+				
+				<a href="paris.html">read more</a>
+			</div>
+			<div class="point" id="p-155-542">
+				<span>Barcelona<img src="flags/spain.png" alt="" /></span>
+				<p>Barcelona  is the capital of Catalonia and the second largest city in Spain, after Madrid, with a population of 1,621,537 within its administrative limits on a land area of 101.4 km2 (39 sq mi). The urban area of Barcelona extends beyond the administrative city limits with a population of...</p>
+				
+				<a href="barcelona.html">read more</a>
+			</div> 
+			<div class="point" id="p-590-610">
+				<span>Santorini<img src="flags/greece.png" alt="" /></span>
+				<p>Santorini  is an island in the southern Aegean Sea, about 200 km (120 mi) southeast from Greece's mainland. It is the largest island of a small, circular archipelago which bears the same name and...</p>
+				
+				<a href="santorini.html">read more</a>
+			</div>  
+			<div class="point" id="p-370-470">
+				<span>Venice <img src="flags/italy.png" alt="" /></span>
+				<p>Venice is a small city, extremely concentrated, every corner, monument, Church or museum contains a piece of history, a tale, a way to say or a tradition, not to be counted all the...</p>
+				<a href="venice.html">read more</a>
+			</div>
+			<div class="point" id="p-320-440">
+				<span>Zermatt<img src="flags/switzerland.png" alt="" /></span>
+				<p>Zermatt is a municipality in the district of Visp in the German-speaking section of the canton of Valais in Switzerland. It has a population of about 5,800 inhabitants.
+
+The village is situated at the end of Mattertal at an altitude...</p>
+				
+				<a href="zermatt.html">read more</a>
+			</div>
+			
+			
+		</div><ul class="map_buttons" style="margin-top:10px;margin-left:230px;">
+			<li><a href="#" rel="p-250-400">Paris</a></li>
+			<li><a href="#" rel="p-155-542">Barcelona</a></li>
+			<li><a href="#" rel="p-590-610">Santorini</a></li>
+			<li><a href="#" rel="p-370-470">Venice</a></li>
+			<li><a href="#" rel="p-320-440">Zermatt</a></li>
+		</ul>
+				<div id="footer"><p>All Rights Reserved 2013 - Ivan Kostadinov, Vytautas Skynkis, Giray Ozel</p></div>
+				
+				
+	
+	
+	
+	</div>
+</body>
+</html>

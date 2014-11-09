@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Top 5 vacation places - Europe</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/mobilymap.js" type="text/javascript"></script>
+<script src="js/init.js" type="text/javascript"></script>
+<script>
+ 
+	
+	$(document).ready(function(){
+                $(".pl").mouseover(function() {  
+                    $(this).find("ul").stop(true, true).slideDown();  
+                });  
+                          
+              
+                $(".pl").mouseleave(function() {  
+                    $(this).find("ul").stop(true, true).slideUp();  
+                }); 
+				  $(".gl").mouseover(function() {  
+                    $(this).find("ul").stop(true, true).slideDown();  
+                });  
+                          
+              
+                $(".gl").mouseleave(function() {  
+                    $(this).find("ul").stop(true, true).slideUp();  
+                }); 
+
+   
+  
+});
+</script>
+</head>
+<body>
+	<div id="wrapper">
+		<a href="index.html"><div id="logo"></div></a>
+			<div id="nav">
+				<ul>
+					<li><a href="intex.html">Home</a>
+					<li class="pl"><a href="#">Places</a>
+							<ul>
+							<li><a href="paris_dutch.html">Paris</a>
+							<li><a href="barcelona_dutch.html">Barcelona</a>
+							<li><a href="santorini_dutch.html">Santorini</a>
+							<li><a href="venice_dutch.html">Venice</a>
+							<li><a href="zermatt_dutch.html">Zermatt</a>
+						</ul>	
+					<li class="gl"><a href="#">Gallery</a>	
+						<ul>
+							<li><a href="paris_gallery.html">Paris</a>
+							<li><a href="barcelona_gallery.html">Barcelona</a>
+							<li><a href="santorini_gallery.html">Santorini</a>
+							<li><a href="venice_gallery.html">Venice</a>
+							<li><a href="zermatt_gallery.html">Zermatt</a>
+						</ul>				
+					<li><a href="#">Contact</a>
+					</ul>
+				</div>
+				<div id="info"></div>
+				<div id="map">
+				
+			<img src="img/europe_map.jpg" alt="Europe Map" width="1000" height="700" />
+			<div class="point" id="p-250-400">
+				<span>Paris<img src="flags/france.png" alt="" /></span>
+				
+				<a href="paris.html">Paris</a>
+			</div>
+			<div class="point" id="p-155-542">
+				<span>Barcelona<img src="flags/spain.png" alt="" /></span>
+				
+				<a href="barcelona.html">Barcelona</a>
+			</div> 
+			<div class="point" id="p-590-610">
+				<span>Santorini<img src="flags/greece.png" alt="" /></span>
+				
+				<a href="santorini">Santorini</a>
+			</div>  
+			<div class="point" id="p-370-470">
+				<span>Venice <img src="flags/italy.png" alt="" /></span>
+				
+				<a href="venice.html">Venice</a>
+			</div>
+			<div class="point" id="p-320-440">
+				<span>Zermatt<img src="flags/switzerland.png" alt="" /></span>
+				
+				<a href="zermatt.html">Zermatt</a>
+			</div>
+			
+			
+		</div><ul class="map_buttons" style="margin-top:10px;margin-left:230px;">
+			<li><a href="#" rel="p-250-400">Paris</a></li>
+			<li><a href="#" rel="p-155-542">Barcelona</a></li>
+			<li><a href="#" rel="p-590-610">Santorini</a></li>
+			<li><a href="#" rel="p-370-470">Venice</a></li>
+			<li><a href="#" rel="p-320-440">Zermatt</a></li>
+		</ul>
+				<div id="footer"></div>
+				
+				
+	
+	
+	
+	</div>
+</body>
+</html>

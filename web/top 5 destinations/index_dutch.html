@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Top 5 vacation places - Europe</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/mobilymap.js" type="text/javascript"></script>
+<script src="js/init.js" type="text/javascript"></script>
+<script>
+ 
+	
+	$(document).ready(function(){
+                $(".pl").mouseover(function() {  
+                    $(this).find("ul").stop(true, true).slideDown();  
+                });  
+                          
+              
+                $(".pl").mouseleave(function() {  
+                    $(this).find("ul").stop(true, true).slideUp();  
+                }); 
+				  $(".gl").mouseover(function() {  
+                    $(this).find("ul").stop(true, true).slideDown();  
+                });  
+                          
+              
+                $(".gl").mouseleave(function() {  
+                    $(this).find("ul").stop(true, true).slideUp();  
+                }); 
+
+   
+  
+});
+</script>
+</head>
+<body>
+	<div id="wrapper">
+		<a href="index_dutch.html"><div id="logo"></div></a>
+			<div id="nav">
+				<ul>
+					<li><a href="intex_dutch.html">Home</a>
+					<li class="pl"><a href="#">Plaatsen</a>
+							<ul>
+							<li><a href="paris_dutch.html">Parijs</a>
+							<li><a href="barcelona_dutch.html">Barcelona</a>
+							<li><a href="santorini_dutch.html">Santorini</a>
+							<li><a href="venice_dutch.html">Venetië</a>
+							<li><a href="zermatt_dutch.html">Zermatt</a>
+						</ul>	
+					<li class="gl"><a href="#">Galerij</a>
+						<ul>
+							<li><a href="paris_galleryd.html">Parijs</a>
+							<li><a href="barcelona_galleryd.html">Barcelona</a>
+							<li><a href="santorini_galleryd.html">Santorini</a>
+							<li><a href="venice_galleryd.html">Venetië</a>
+							<li><a href="zermatt_galleryd.html">Zermatt</a>
+						</ul>				
+					<li><a href="contact_dutch.html">Contact</a>
+					</ul>
+				</div>
+				<div id="info">
+				<p>Welkom op onze website! Wij kunnen u helpen met uw keuze waar u uw vakantie door te brengen.Hier vindt u informatie over de hotels, musea, restaurants, enterteinemnts, foto's van de plaats waar hij van u. Wij hopen dat deze website om behulpzaam te zijn voor jou! <br/> <br/>Kies een plaats op de kaart hieronder a.u.b.:</p></div>
+				<div id="map">
+				
+			<img src="img/europe_map.jpg" alt="Europe Map" width="1000" height="700" />
+			<div class="point" id="p-250-400">
+				<span>Parijs<img src="flags/france.png" alt="" /></span>
+				<p>Parijs is de hoofdstad en grootste stad van Frankrijk. Het is gelegen aan de rivier de Seine, in het noorden van Frankrijk, in het hart van het Ile-de-Franceregion. De stad van Parijs, op de ...</p>
+				
+				<a href="paris_dutch.html">lees meer</a>
+			</div>
+			<div class="point" id="p-155-542">
+				<span>Barcelona<img src="flags/spain.png" alt="" /></span>
+				<p>Barcelona is de hoofdstad van Catalonië en de op een na grootste stad van Spanje, na Madrid, met een bevolking van 1.621.537 binnen de administratieve grenzen op een oppervlakte van 101,4 km2 (39 vierkante mijl). Het stedelijk gebied van Barcelona verder reikt dan de administratieve stadsgrenzen met een bevolking van...</p>
+				
+				<a href="barcelona_dutch.html">lees meer</a>
+			</div> 
+			<div class="point" id="p-590-610">
+				<span>Santorini<img src="flags/greece.png" alt="" /></span>
+				<p>Santorini is een eiland in de zuidelijke Egeïsche Zee, ongeveer 200 km (120 mi) zuidoosten van het vasteland van Griekenland. Het is het grootste eiland van een kleine, cirkelvormige archipel met dezelfde naam draagt ​​en ...</p>
+				
+				<a href="santorini_dutch.html">lees meer</a>
+			</div>  
+			<div class="point" id="p-370-470">
+				<span>Venice <img src="flags/italy.png" alt="" /></span>
+				<p>Venice is een kleine stad, zeer geconcentreerd, elke hoek, monument, kerk of museum bevat een stukje geschiedenis, een verhaal, een manier om te zeggen of een traditie, niet te rekenen alle ...</p>
+				<a href="venice_dutch.html">lees meer</a>
+			</div>
+			<div class="point" id="p-320-440">
+				<span>Zermatt<img src="flags/switzerland.png" alt="" /></span>
+				<p> Zermatt is een gemeente in het district Visp in het Duitstalige deel van het kanton Wallis in Zwitserland. Het heeft een bevolking van ongeveer 5.800 inwoners.Het dorp ligt aan het einde van Mattertal op een hoogte ... </p>
+				
+				<a href="zermatt_dutch.html">lees meer</a>
+			</div>
+			
+			
+		</div><ul class="map_buttons" style="margin-top:10px;margin-left:230px;">
+			<li><a href="#" rel="p-250-400">Parijs</a></li>
+			<li><a href="#" rel="p-155-542">Barcelona</a></li>
+			<li><a href="#" rel="p-590-610">Santorini</a></li>
+			<li><a href="#" rel="p-370-470">Venetië</a></li>
+			<li><a href="#" rel="p-320-440">Zermatt</a></li>
+		</ul>
+				<div id="footer"><p>All Rights Reserved 2013 - Ivan Kostadinov, Vytautas Skynkis, Giray Ozel</p></div>
+				
+				
+	
+	
+	
+	</div>
+</body>
+</html>
