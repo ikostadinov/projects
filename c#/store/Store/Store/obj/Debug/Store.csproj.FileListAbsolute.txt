@@ -1,0 +1,9 @@
+E:\c#\store\Store\Store\bin\Debug\Store.exe.config
+E:\c#\store\Store\Store\bin\Debug\Store.exe
+E:\c#\store\Store\Store\bin\Debug\Store.pdb
+E:\c#\store\Store\Store\obj\Debug\Store.csprojResolveAssemblyReference.cache
+E:\c#\store\Store\Store\obj\Debug\Store.Form1.resources
+E:\c#\store\Store\Store\obj\Debug\Store.Properties.Resources.resources
+E:\c#\store\Store\Store\obj\Debug\Store.csproj.GenerateResource.Cache
+E:\c#\store\Store\Store\obj\Debug\Store.exe
+E:\c#\store\Store\Store\obj\Debug\Store.pdb
