@@ -1,0 +1,258 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(http://p1.pichost.me/i/12/1346730.jpg);
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+#wrapper{
+	width: 960px;
+	box-shadow: 0px 5px 14px 0px rgba(50, 50, 50, 0.84);
+	margin: 0 auto;
+}
+
+#logo{
+	width: 150px;
+	height: 150px;
+    background: -webkit-linear-gradient(top, rgba(229,112,231,1) 0%,rgba(200,94,199,1) 47%,rgba(168,73,163,1) 100%);
+	float: left;
+	margin-left: 20px;
+	box-shadow: inset 0px 0px 5px #ccc;
+	z-index: 1;
+	position: absolute;
+}
+
+#web-nav{
+	height: 80px;
+	background: #9C0574;
+}
+
+#web-nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+	margin-right: 10px;
+}
+
+#web-nav li{
+	float: left;
+}
+
+#web-nav ul li a{
+	text-decoration: none;
+	font-family: Verdana;
+	line-height: 80px;
+	padding: 10px;
+	color: #fff;
+	background: #9C0574;
+}
+
+#web-nav ul li a:hover{
+background: #77067F;
+-webkit-box-shadow: inset 0 0 5px #133e40;
+-webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+  border-radius: 10px;
+}
+
+.active{
+   -webkit-box-shadow: inset 0 0 5px #133e40;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#slider{
+	height: 400px;
+	z-index: 0;
+}
+
+#main-content{
+ 	padding: 20px;
+}
+
+#address{
+	float: left;
+	margin-right: 20px;
+	width: 600px;
+}
+
+#contact-form input, textarea{
+	padding: 10px;
+	border-radius: 10px;
+	outline: none;
+	border:1px solid #ccc;
+}
+
+#address p{
+	color: #fff;
+	font-family: Verdana;
+	font-weight: bold;
+}
+
+#prices td,th{
+	border: 1px solid #ccc;
+}
+
+#prices tr:nth-child(odd){
+	background: #77067F;
+}
+
+#prices tr:nth-child(even){
+	background: #9C0574;
+}
+
+#prices tr:hover{
+	background: #ccc;
+	 -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+#prices{
+	border-collapse: collapse;
+	width: 600px;
+	height: 400px;
+	text-align: center;
+}
+
+#price{
+	float: left;
+}
+
+#price p{
+	font-size: 20px;
+	color: #fff;
+	font-weight: bold;
+}
+
+#amount{
+	float: right;
+}
+
+#reservation{
+	margin-right: 70px;
+}
+
+#booking{
+	width: 200px;
+	float: right;
+}
+
+#booking input, select{
+	border-radius: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	width: 200px;
+	margin-top: 5px;
+	outline: none;
+}
+
+span.roll {
+    background:url(../images/mag.png) center center no-repeat #000;
+    height: 280px;
+    position: absolute;
+    width: 430px;
+    z-index: 10;	
+	-webkit-box-shadow: 0px 0px 4px #000;
+	-moz-box-shadow: 0px 0px 4px  #000;
+	box-shadow: 0px 0px 4px  #000; 
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	padding-top: 20px;
+	border-radius: 10px;
+} 
+
+#main-content section{
+ 	width: 280px;
+	height: 200px;
+	float: left;
+	margin-left: 10px;
+	border-radius: 10px;
+	padding: 5px;
+	border:1px dashed #9C0574;
+}
+
+#main-content section:hover{
+	background: #9C0574;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+#web-footer section header, #main-content section header{
+	text-align: center;
+}
+
+#main-content #gal img{
+	width: 281px;
+	height: 300px;
+	margin: 10px;
+	border: 1px dashed #ccc;
+}
+
+#main-content h4{
+	border-bottom: 2px dashed #9C0574;
+}
+
+#main-content a.image img{
+	width: 430px;
+	height: 300px;
+	border-radius: 10px;
+	box-shadow: 0 0 8px #000;
+	border: none;
+}
+
+#main-content a.image{
+	float: left;
+	margin: 15px;
+}
+
+#web-footer{
+	height: 200px;
+	border-top: 2px dashed #9C0574;
+	padding: 20px;
+}
+
+#main-content:after, #web-footer:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#web-footer section{
+	width: 215px;
+	height: 200px;
+	float: left;
+	font-family: Tahoma;
+	margin-left: 10px;
+    background: -webkit-linear-gradient(top, rgba(148,21,155,1) 0%,rgba(148,21,155,0.99) 1%,rgba(255,255,255,0) 100%); 
+}
+
+#web-footer section h3{
+	color: #fff;
+	font-family: Arial;
+}
+
+#web-footer section ul{
+	list-style-type: none;
+}
+
+#web-footer section ul li a{
+	color: #570955;
+	font-family: Verdana;
+	text-decoration: none;
+}
+
+#web-footer section ul li a:hover{
+	color: #fff;
+}
+
