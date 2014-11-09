@@ -1,0 +1,172 @@
+body{
+	padding: 0;
+	margin: 0;
+	background: -webkit-linear-gradient(top, rgba(44,83,158,1) 0%,rgba(44,83,158,1) 100%);
+	background: -moz-linear-gradient(top, rgba(44,83,158,1) 0%, rgba(44,83,158,1) 100%); 
+	background: -ms-linear-gradient(top, rgba(44,83,158,1) 0%,rgba(44,83,158,1) 100%);	
+}
+
+#left-aside{
+	border-right: 5px solid black;
+	border-bottom: 5px solid black;
+	float: left;
+	background: #FFF;
+	margin-left: -200px;
+}
+
+#left-aside img{
+	width: 150px;
+	height: 150px;
+	margin: 0;
+	padding: 0;
+}
+
+#content{
+	margin-left: 160px;
+	height: 1000px;
+	color: #FFF;
+}
+
+#adminlogin form{
+ width:400px;
+ background: -webkit-linear-gradient(top, #499bea 0%,#207ce5 100%);
+ background: -moz-linear-gradient(top, #499bea 0%,#207ce5 100%);
+ background: -ms-linear-gradient(top, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%);
+ padding: 15px;
+ margin-top: -150px;
+ margin-left: auto;
+ margin-right: auto;
+ border-radius: 10px;
+}
+
+#edit-item  input, #welcome-page form input, #welcome-page form textarea, #adminlogin form input{
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	padding: 8px;
+	margin-bottom: 10px;
+	outline: none;
+}
+
+#edit-item input[type='submit'], #menu-item input[type='submit'], #welcome-page input[type="submit"], #working-time input[type="submit"], form input[type="submit"]
+{
+	cursor: pointer;
+	width: 150px;
+}
+
+#top-art{
+	color: #FFF;
+	float: right;
+	margin: -50px auto;
+	width: 150px;
+	font-family: Verdana;
+	padding: 20px;
+	text-align: center;
+	border-bottom-left-radius: 10px; 
+	border-bottom-right-radius: 10px;
+	background: -webkit-linear-gradient(top, #49c0f0 0%,#2cafe3 100%);	
+	background: -moz-linear-gradient(top, #49c0f0 0%,#2cafe3 100%);	
+	background: -ms-linear-gradient(top, rgba(73,192,240,1) 0%,rgba(44,175,227,1) 100%);
+}
+
+#working-time{
+	 margin: 0 auto;
+	 width: 600px;
+	 padding: 20px;
+	 border-radius: 10px;
+}
+
+#working-time table{
+	width: 600px;
+	border-collapse: collapse;
+}
+
+#working-time input{
+	border-radius: 10px;
+	padding: 8px;
+	border: 1px solid #ccc;
+}
+
+
+.bookings{
+	border-radius: 10px;
+	border:1px solid #e9e9e9;
+	width: 250px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, .1);
+	margin:20px;
+	padding:15px;
+	padding-top: 0;
+	float:left;
+	display:none;
+		}
+
+.bookings:hover{
+background: #3f4c6b;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+	text-shadow: none;
+		}
+
+		.bookings span{
+			font-weight: bold;
+			font-size: 15px;
+		}
+
+#welcome-page{
+	width: 500px;
+	height: 500px;
+	margin:0 auto;
+}	
+
+#welcome-page textarea{
+	height: 400px;
+	width: 500px;
+	max-width: 500px;
+}	
+
+#adminlogin #message{
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	margin-left: 10px;
+}
+
+#menu-item{
+	padding: 10px;
+	width: 450px;
+	border: 3px solid #ccc;
+	float: left;
+}
+
+#menu-item input, select{
+	border-radius: 10px;
+	padding: 8px;
+	border: 1px solid #ccc;
+}
+
+#edit-item{
+	color: #fff;
+	margin: 0 auto;
+	width: 500px;
+	background: -webkit-linear-gradient(top, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); 
+	background: -moz-linear-gradient(top, rgba(53,106,160,1) 0%, rgba(53,106,160,1) 100%);
+	background: -ms-linear-gradient(top, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#working-time table, #menu-table, #gallery-table{
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ #working-time td, #menu-table td, #gallery-table td{
+	background: -webkit-linear-gradient(top, rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%);
+	background: -moz-linear-gradient(top, rgba(99,182,219,1) 0%, rgba(48,157,207,1) 100%);
+	background: -ms-linear-gradient(top, rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%);
+	text-align: center;
+	border: 1px solid #ccc;
+	padding: 5px;
+}

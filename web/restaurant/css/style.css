@@ -1,0 +1,198 @@
+body{
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(207,231,250,1)), color-stop(100%,rgba(99,147,193,1)));
+	background: -moz-linear-gradient(top, rgba(207,231,250,1) 0%, rgba(99,147,193,1) 100%); 
+	background: -ms-linear-gradient(top, rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%);
+	margin: 0;
+	padding: 0;
+}
+
+#web-wrapper{
+	width: 960px;
+	-webkit-box-shadow: 0px 5px 14px 0px rgba(50, 50, 50, 0.84);
+	-moz-box-shadow:    0px 5px 14px 0px rgba(50, 50, 50, 0.84);
+	box-shadow:         0px 5px 14px 0px rgba(50, 50, 50, 0.84);
+	margin: 0 auto;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(238,238,238,1)));
+	background: -moz-linear-gradient(top, rgba(238,238,238,1)0%, rgba(238,238,238,1) 100%);
+	background: -ms-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(238,238,238,1) 100%);
+}
+
+#web-header{
+	height: 240px;
+}
+
+#slider{
+	height: 190px;
+}
+
+#web-nav{
+	margin-top: 15px;
+	height: 40px;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#499bea), color-stop(100%,#207ce5));
+	background: -moz-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+	background: -ms-linear-gradient(top, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%);
+}
+
+#web-nav ul{
+	list-style-type: none;
+}
+
+#web-nav ul li a{
+	float: left;
+	line-height: 40px;
+	text-decoration: none;
+	padding-right: 20px;
+	padding-left: 20px;
+	color: #FFF;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #000; 
+	font-size: 1em;
+}
+
+#web-nav ul li a:hover{
+	background: #3f4c6b;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+	text-shadow: none;
+}
+
+#web-content{
+
+}
+
+
+#main-content{
+	width: 720px;
+	float: left;
+	padding: 15px;
+}
+
+#main-content img{
+	padding: 10px;
+}
+
+#main-content .image-set img{
+	width: 200px;
+	height: 200px;
+}
+
+#main-content .image-set img:hover{
+background: purple;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+#web-aside{
+	width: 200px;
+	float: right;
+}
+
+#main-content input, textarea, #web-aside input, select{
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	padding: 8px;
+	margin-bottom: 10px;
+	outline: none;
+}
+
+#main-content textarea{
+	max-width: 650px;
+}
+
+#main-content input:focus,textarea:focus,#web-aside input:focus{
+	border: 1px solid red;
+	-webkit-transition: border 1s ease-out;
+  	-moz-transition: border 1s ease-out;
+  	-o-transition: border 1s ease-out;
+  	transition: border 1s ease-out;
+}
+
+#main-content input[type='submit'], #web-aside input[type='submit']{
+	cursor: pointer;
+}
+
+#main-content article{
+	width: 350px;
+	float: left;
+	padding-top: -10px;
+}
+
+#main-content article img{
+	padding: 0;
+	padding-right: 5px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+#main-content article p{
+	margin-top: 10px;
+}
+
+#main-content span{
+	cursor: pointer;
+	text-align: center;
+	padding-right: 10px;
+	font-weight: bold;
+}
+
+#web-content:after, #web-footer:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#web-footer{
+	padding-left: 100px;
+	border-top: 4px solid #fff;
+	-webkit-box-shadow: 0px -2px 10px 0px rgba(50, 50, 50, 0.69);
+	-moz-box-shadow: 0px -2px 10px 0px rgba(50, 50, 50, 0.69);
+	box-shadow: 0px -2px 10px 0px rgba(50, 50, 50, 0.69);
+	color: #FFF;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(63,76,107,1)), color-stop(100%,rgba(63,76,107,1)));
+	background: -moz-linear-gradient(top, rgba(63,76,107,1) 0%, rgba(63,76,107,1) 100%);
+	background: -ms-linear-gradient(top, rgba(63,76,107,1) 0%,rgba(63,76,107,1) 100%);
+}
+
+#web-footer section{
+	width: 250px;
+	float: left;
+	margin-right: 50px;
+}
+
+.fb, .tw, .go
+{
+   cursor: pointer;
+   float: right;
+   margin-right: 15px;
+   margin-top: 9px;
+}
+
+.fb:hover, .tw:hover, .go:hover, .mail:hover
+{
+   box-shadow: 0px 0px 12px #fff;
+}
+
+.fb
+{
+   width: 42px;
+   height: 42px;
+   background: url(../img/facebook.png) no-repeat top center;
+}
+
+.tw
+{
+   width: 42px;
+   height: 42px;
+   background: url(../img/twitter.png) no-repeat top center;
+}
+
+.go
+{
+   width: 42px;
+   height: 42px;
+   background: url(../img/google.png) no-repeat top center;
+}
