@@ -1,0 +1,313 @@
+.slide .intro img
+{
+	width: 100%;
+}
+
+#menu li
+{
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 14px;
+}
+
+#section0_0 {
+	background:url(../img/bg2.jpg) top center no-repeat;
+	background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+#section1_2 {
+	background: url(../img/TheGreatWall_1.jpg) top center no-repeat;
+	background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+#section2_4 {
+	background: url(../img/Petra_1.jpg) top center no-repeat;
+	background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+#section3_6 {
+	background: url(../img/ChristtheRedeemer_1.jpg) top center no-repeat;
+	background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+#section4_8 {
+	background: url(../img/MachuPicchu_1.jpg) top center no-repeat;
+	background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+#section5_10 {
+	background: url(../img/ChichenItza_1.jpg) top center no-repeat;
+	background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+#section6_12 {
+	background: url(../img/Colosseum_1.jpg) top center no-repeat;
+	background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+#section7_14 {
+	background: url(../img/TajMahal_1.jpg) top center no-repeat;
+	background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+.intro div {
+	width: 960px;
+	box-shadow: 0px 0px 8px #000;
+	margin: 0 auto;
+	border-radius: 15px;
+	background: rgba(255,255,255, 0.4);
+	text-indent: 3em;
+	text-align: justify;
+	height: auto;
+}
+
+.intro div:hover {
+	width: 960px;
+	box-shadow: 0px 0px 8px #000;
+	margin: 0 auto;
+	border-radius: 15px;
+	background: rgba(255,255,255, 0.6);
+	text-indent: 3em;
+	text-align: justify;
+	height: auto;
+}
+
+.intro div p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 940px;
+	color: black;
+}
+
+#map 
+{
+	border-radius: 15px;
+	box-shadow: 0px 0px 8px #000;
+	width:960px;
+	height:500px;
+	margin-top:40px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+.loader {
+	background:url(../img/loader.gif) no-repeat center #fff;
+}
+
+.imgCaption {
+	bottom:0;
+	left:0;
+	color:#fff;
+	opacity:.6;
+	background:#333;
+	padding:10px;
+	width:960px;
+	text-align:center;
+	font-size:16px;
+	text-transform:uppercase;
+	text-shadow:1px 1px 0 #111;
+	font-weight:bold;
+}
+
+.bubble .close {
+	display:block;
+	text-indent:-9999px;
+	position:absolute;
+	top:-6px;
+	right:-6px;
+	width:16px;
+	height:16px;
+	outline:none;
+	background:url(../img/close.png) no-repeat;
+	cursor:pointer;
+}
+
+.mapNav {
+	width:84px;
+	height:84px;
+}
+
+.navBtn {
+	position:absolute;
+	background-repeat:no-repeat;
+	width:32px;
+	height:32px;
+	outline:none;
+	text-indent:-9999px;
+	display:block;
+	z-index:7px;
+}
+
+.navBtn0 {
+	top:0;
+	left:26px;
+	background-image:url(../img/navtop.png);
+}
+
+.navBtn1 {
+	top:26px;
+	right:0;
+	background-image:url(../img/navright.png);
+}
+
+.navBtn2 {
+	bottom:0;
+	left:26px;
+	background-image:url(../img/navbottom.png);
+}
+
+.navBtn3 {
+	top:26px;
+	left:0;
+	background-image:url(../img/navleft.png);
+}
+
+.point {
+	display:block;
+	text-indent:-9999px;
+	width:32px;
+	height:44px;
+	outline:none;
+	background:url(../img/marker.png) no-repeat;
+	cursor:pointer;
+}
+
+.bubble {
+	padding:7px 10px;
+	background:#333;
+	color:#fff;
+	width:240px;
+	font-size:11px;
+	margin-top:-150px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	-moz-box-shadow:0 0 20px #999;
+	-webkit-box-shadow:0 0 20px #999;
+}
+
+.bubble p {
+	margin:5px 0;
+}
+
+.bubble span {
+	display:block;
+	font-size:12px;
+	font-weight:bold;
+}
+
+#map div a {
+	color:#fff;
+}
+
+a{
+	text-decoration:none;
+}
+.section{
+	text-align:center;
+}
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px; 
+            border-radius: 10px; 
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a, #menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 50px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+	background: #3f84eb;
+	text-align: center;
+}
+
+body,div,ul,ol,li,h1,h2,h3,h4,h5,h6 
+{
+    padding: 0;
+    margin: 0;
+}
+
+ol,ul 
+{
+    list-style: none;
+
+}
+
+body
+{
+	font-family: arial,helvetica;
+}
+
+.intro p
+{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+
+.more_info
+{
+	text-decoration: underline;
+}
