@@ -1,0 +1,8 @@
+E:\homeandlearn\Calculator\Calculator\bin\Debug\Calculator.exe.config
+E:\homeandlearn\Calculator\Calculator\bin\Debug\Calculator.exe
+E:\homeandlearn\Calculator\Calculator\bin\Debug\Calculator.pdb
+E:\homeandlearn\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+E:\homeandlearn\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.Cache
+E:\homeandlearn\Calculator\Calculator\obj\Debug\Calculator.exe
+E:\homeandlearn\Calculator\Calculator\obj\Debug\Calculator.pdb
+E:\homeandlearn\Calculator\Calculator\obj\Debug\Calculator.Calculator.resources
