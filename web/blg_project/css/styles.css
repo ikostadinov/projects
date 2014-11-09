@@ -1,0 +1,960 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: url(../images/bodybckg.png) top center;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    font-family: Century Gothic, sans-serif;
+}
+
+/**********************************************************************************
+                                WEB-WRAPPER
+***********************************************************************************/
+
+#web-wrapper
+{
+    width: 940px;
+    margin: 0 auto 20px auto;
+    background: rgba(250,250,250, 0.4);
+    padding-bottom: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+/**********************************************************************************
+                                WEB-HEADER
+***********************************************************************************/
+
+#banner
+{
+    height: 200px;
+    width: 940px;
+}
+
+#logo
+{
+    height: 53px;
+    margin-left: -40px;
+    float: left;
+}
+
+/**********************************************************************************
+                                WEB-NAV
+***********************************************************************************/
+
+#web-nav
+{
+    background: url(../images/navbckg.png) repeat-x;
+    height: 55px;
+    line-height: 55px; /*center elements*/
+    margin-top: -21px;
+}
+
+    #web-nav ul li
+    {
+        display: inline-block;
+    }
+
+#web-nav ul li a
+{
+    padding: 17px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Century Gothic, sans-serif;
+    text-decoration: none;
+}
+
+    #web-nav ul li a:hover
+    {
+        background: #4b545f;
+        box-shadow: inset 0 0 8px #000;
+    }
+
+#web-nav ul li:hover > a
+{
+    background: #4b545f;
+    box-shadow: inset 0 0 8px #000;
+}
+
+#web-nav ul ul
+{
+    background: #5f6975;
+    padding: 0;
+    position: absolute;
+    top: 254px;
+    box-shadow: inset 0 0 8px #000;
+    z-index: 500;
+    display: none;
+}
+
+    #web-nav ul ul li
+    {
+        float: none;
+        display: block;
+        border-top: 1px solid #6b727c;
+        border-bottom: 1px solid #575f6a;
+        position: relative;
+    }
+
+        #web-nav ul ul li a
+        {
+            width: 200px;
+            padding: 0 20px;
+            color: #fff;
+            font-size: 15px;
+            display: block;
+        }
+
+            #web-nav ul ul li a:hover
+            {
+                background: #4b545f;
+            }
+
+#modal_bg
+{
+    display: none;
+}
+
+/**********************************************************************************
+                                CONTENT
+***********************************************************************************/
+
+#content
+{
+    position: relative;
+    top: 20px;
+    height: auto;
+}
+
+    #content:after, #web-nav:after
+    {
+        content: " ";
+        display: block;
+        clear: both;
+    }
+
+/**********************************************************************************
+                                BREAD-CRUMBS
+***********************************************************************************/
+
+.crumbs
+{
+    color: #000;
+    font-size: 14px;
+}
+
+    .crumbs a
+    {
+        text-align: left;
+        color: #000;
+        font-size: 14px;
+        text-decoration: underline;
+        
+    }
+
+        .crumbs a:hover
+        {
+            color: #000;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+ol li a
+{
+    color: #000;
+    text-decoration: underline;
+}
+
+ol li a:hover
+{
+    color: #000;
+    text-decoration: none;
+}
+
+p 
+{
+	text-align: justify;
+}
+		
+#main-cont
+{
+    background: #cdcccc;
+    border-radius: 10px;
+    width: 610px;
+    margin-left: 20px;
+    float: left;
+    padding: 10px;
+    height: auto;
+}
+
+.more
+{
+    color: #551a8b;
+    text-decoration: none;
+    float: right;
+    font-weight: bold;
+}
+
+    .more:hover
+    {
+        color: #fff;
+    }
+
+.clear
+{
+    clear: both;
+}
+
+
+/**********************************************************************************
+                                TABLE-RESIDENTS
+***********************************************************************************/
+
+#residents 
+{
+    border-collapse: collapse;
+	width: 605px;
+}
+
+    #residents th, td
+		{
+        padding: 5px;
+        border: 2px solid #821414;
+		text-align: center;
+		}
+
+    #residents th
+    {
+        background: #c91f1f;
+        border-bottom: 2px solid #821414;
+        color: #fff;
+        font-family: Verdana,sans-serif;
+        text-align: left;
+		font-size: 12px;
+    }
+
+    #residents td
+    {
+        font-size: 11px;
+        font-family: sans-serif;
+    }
+
+    #residents td:nth-child(even)
+    {
+        background: #B2A59A;
+    }
+
+    #residents td:nth-child(odd)
+    {
+        background: #E8D6C8;
+    }
+
+article img
+{
+    box-shadow: 0px 0px 3px #000;
+}
+
+.culture_images, .universities_images, .highschools_images, .modernity_images, .schools_images, .history_images
+{
+    float: left;
+    margin-right: 10px;
+}
+
+
+.modernity_images_r, .culture_images_r, .history_images_r
+{
+    float: right;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+/**********************************************************************************
+                                WEB-ASIDE
+***********************************************************************************/
+
+#web-aside
+{
+    width: 250px;
+    float: right;
+    margin-right: 20px;
+    height: auto;
+    border-radius: 10px;
+}
+
+    #web-aside section header h1
+    {
+        color: #FFF;
+        font-size: 17px;
+        width: 227px;
+        height: 53px;
+        margin-left: 34px;
+        padding: 10px;
+        background: url(../images/sectionHeader.png) no-repeat;
+    }
+
+    #web-aside section header
+    {
+        padding-top: 5px;
+        height: 70px;
+    }
+
+    #web-aside section
+    {
+        background: #cdcccc;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+        #web-aside section p
+        {
+            margin: 0;
+            padding: 10px 10px;
+        }
+
+/**********************************************************************************
+                                WIDGETS
+***********************************************************************************/
+
+.center
+{
+    text-align: center;
+}
+
+#clock
+{
+    padding: 10px 0 20px 0;
+    font-weight: 800;
+}
+
+#weather
+{
+    margin-left: 37px;
+    display: block !important;
+    width: 180px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+/**********************************************************************************
+                                WEB-FOOTER
+***********************************************************************************/
+
+#web-footer
+{
+    width: 900px;
+    margin-left: 20px;
+    margin-top: 40px;
+    height: 40px;
+    background: url(../images/navbckg.png) repeat-x;
+    border-radius: 10px;
+}
+
+.top
+{
+    display: none;
+    position: fixed;
+    right: 40px;
+    top: 91%;
+    cursor: pointer;
+}
+
+#web-footer p
+{
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    top: -7px;
+    left: 10px;
+    color: #fff;
+    float: left;
+}
+
+#web-footer span a
+{
+    padding-top: 9px;
+	padding-left: 25px;
+	float: left;
+	color: #551a8b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+	#web-footer span a:hover
+		{
+			color: #fff;
+		}
+
+    #social div
+    {
+        float: right;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+
+.fb, .tw, .mail
+{
+    cursor: pointer;
+}
+
+.fb
+{
+    width: 33px;
+    height: 35px;
+    background: url(../images/social.png) -42px 0;
+}
+
+    .fb:hover
+    {
+        background: url(../images/social.png) -42px 35px;
+    }
+
+.tw
+{
+    width: 33px;
+    height: 35px;
+    background: url(../images/social.png) -83px 0;
+}
+
+    .tw:hover
+    {
+        background: url(../images/social.png) -83px 35px;
+    }
+
+.mail
+{
+    width: 33px;
+    height: 35px;
+    background: url(../images/social.png) 0 0;
+}
+
+    .mail:hover
+    {
+        background: url(../images/social.png) 0 35px;
+    }
+
+#main-cont, #web-footer, section, .person
+{
+    box-shadow: 0px 0px 3px #000;
+}
+
+/**********************************************************************************
+                                PEOPLE
+***********************************************************************************/
+
+.person
+{
+    float: left;
+    margin: 20px;
+}
+
+.ic_container
+{
+    vertical-align: baseline;
+    position: relative;
+    height: 260px;
+}
+
+.ic_caption
+{
+    position: absolute;
+    opacity: 0.6;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    left: 0px;
+    right: 0px;
+    cursor: default;
+}
+
+.ic_category
+{
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 3px;
+    padding: 5px;
+    margin: 0px;
+}
+
+.ic_caption h3
+{
+    padding: 0px 5px 5px 5px;
+    margin: 0px;
+    font-size: 18px;
+}
+
+.ic_text
+{
+    padding: 2px;
+    margin: 0px;
+    text-align: left;
+    font-size: 11px;
+}
+
+
+/**********************************************************************************
+                                BEFORE AND NOW
+***********************************************************************************/
+
+.beforeandnow
+{
+    float: left;
+    margin: 15px;
+}
+
+.before
+{
+    vertical-align: baseline;
+    position: relative;
+    height: 165px;
+}
+
+.now
+{
+    height: 165px;
+    position: absolute;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    left: 0px;
+    right: 0px;
+    cursor: default;
+}
+
+
+
+/**********************************************************************************
+									SLIDER
+***********************************************************************************/
+
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+li.bjqs-slide{position:absolute; display:none;}
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+ul.bjqs-controls.v-centered li a{position:absolute;}
+ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}
+ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
+ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}
+ol.bjqs-markers.h-centered{text-align: center;}
+ol.bjqs-markers li{display:inline;}
+ol.bjqs-markers li a{display:inline-block;}
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+#banner-slide{
+	margin-bottom: 60px;
+	margin-top: 20px;
+}
+
+ul.bjqs-controls.v-centered li a{
+	display:block;
+	padding:10px;
+	background:#fff;
+	color:#000;
+	text-decoration: none;
+}
+
+ul.bjqs-controls.v-centered li a:hover{
+	background:#000;
+	color:#fff;
+}
+
+ol.bjqs-markers li a{
+	padding:5px 10px;
+	background:#000;
+	color:#fff;
+	margin:5px;
+	text-decoration: none;
+}
+
+ol.bjqs-markers li.active-marker a,
+ol.bjqs-markers li a:hover{
+	background: #999;
+}
+
+p.bjqs-caption{
+	background: rgba(255,255,255,0.5);
+}
+
+/**********************************************************************************
+                                MEDIA QUERY-MAX-WIDTH:480px
+***********************************************************************************/
+
+@media only screen and (max-width:480px)
+{
+   
+    #content
+    {
+        position: static;
+        margin-top: 20px;
+        width: 84%;
+        margin-left: 2%;
+        height: auto;
+        font-size: 80%;
+    }
+	
+    #nav-show
+    {
+        height: 100%;
+        width: 100%;
+        border: 1px solid grey;
+        padding-top: 30px;
+        background: #4C4D4F url(../images/menu-icon.png) top right no-repeat;
+        cursor: pointer;
+    }
+
+        #nav-show:hover > #web-nav
+        {
+            display: block;
+        }
+
+    #web-nav
+    {
+        background: url(../images/navbckg.png) repeat-x;
+        height: auto;
+        line-height: 30px; /*center elements*/
+        padding: 0;
+        position: static;
+        margin-bottom: -30px;
+        margin-top: 5px;
+        display: none;
+    }
+
+        #web-nav ul
+        {
+            position: relative;
+            width: 100%;
+            padding: 0;
+            top: -15px;
+        }
+
+    #residents
+		{
+       display:none;
+		}
+
+      #main-cont img
+    {
+        max-width: 100%;
+        margin-bottom: 5px;
+        float: none;
+        margin-left: 0;
+    }
+	
+    #web-nav ul li
+    {
+        display: block;
+        background: url(../images/navbckg.png) repeat-x;
+        width: 100%;
+        border: none;
+        text-align: center;
+    }
+
+        #web-nav ul li a
+        {
+            display: block;
+            height: 30px;
+            padding: 5px;
+            color: #ffffff;
+            font-size: 0.75em;
+            font-weight: bold;
+            font-family: Century Gothic, sans-serif;
+            text-decoration: none;
+        }
+
+            #web-nav ul li a:hover
+            {
+                background: #4b545f;
+                box-shadow: inset 0 0 8px #000;
+            }
+
+    #web-nav ul ul
+    {
+        background: #5f6975;
+        padding: 0;
+        position: static;
+        margin: 0;
+        box-shadow: inset 0 0 8px #000;
+        z-index: 500;
+        display: none;
+    }
+
+        #web-nav ul ul li
+        {
+            float: none;
+            display: block;
+            border-top: 1px solid #6b727c;
+            border-bottom: 1px solid #575f6a;
+            position: relative;
+            -webkit-transition: background-color 0.3s ease;
+        }
+
+            #web-nav ul ul li a
+            {
+                width: auto;
+                padding: 0 20px;
+                color: #fff;
+                font-size: 0.75em;
+                display: block;
+            }
+
+                #web-nav ul ul li a:hover
+                {
+                    background: #4b545f;
+                }
+
+
+    #web-wrapper
+    {
+        width: 90%;
+        margin-left: 3%;
+    }
+
+    #web-footer
+    {
+        margin-left: 2%;
+        width: 94%;
+    }
+
+    #web-nav
+    {
+        width: 100%;
+    }
+
+    #web-aside, #web-footer span a
+    {
+        display: none;
+    }
+
+    #main-cont
+    {
+        width: 100%;
+        margin-left: 2%;
+    }
+
+    .top, #social
+    {
+        visibility: hidden;
+    }
+
+    #web-footer p
+    {
+        padding-top: 5px;
+        font-size: 0.75em;
+    }
+
+    #banner, #logo
+    {
+        display: none;
+    }
+
+    .person
+      {
+        float: left;
+        margin: 5px;
+    }
+}
+
+
+/**********************************************************************************
+                                MEDIA QUERY-MAX-WIDTH:800px
+***********************************************************************************/
+
+@media only screen and (max-width:800px)
+{
+
+
+    #content
+    {
+        position: static;
+        margin-top: 20px;
+        width: 84%;
+        margin-left: 2%;
+        height: auto;
+        font-size: 80%;
+    }
+
+	
+	
+    #nav-show
+    {
+        height: 100%;
+        width: 100%;
+        border: 1px solid grey;
+        padding-top: 30px;
+        background: #4C4D4F url(../images/menu-icon.png) top right no-repeat;
+        cursor: pointer;
+    }
+
+        #nav-show:hover > #web-nav
+        {
+            display: block;
+        }
+
+    #web-nav
+    {
+        background: url(../images/navbckg.png) repeat-x;
+        height: auto;
+        line-height: 30px; /*center elements*/
+        padding: 0;
+        position: static;
+        margin-bottom: -30px;
+        margin-top: 5px;
+        display: none;
+    }
+
+        #web-nav ul
+        {
+            position: relative;
+            width: 100%;
+            padding: 0;
+            top: -15px;
+        }
+
+ #residents
+		{
+        display:none;
+		}
+
+
+    #main-cont img, iframe
+    {
+        max-width: 100%;
+        margin-bottom: 5px;
+        float: left;
+        margin-left: 0;
+    }
+	
+	#main-cont .history_images_r, #main-cont .culture_images_r{
+	float:right;
+	margin:5px;
+	}
+
+    #web-nav ul li
+    {
+        display: block;
+        background: url(../images/navbckg.png) repeat-x;
+        width: 100%;
+        border: none;
+        text-align: center;
+    }
+
+        #web-nav ul li a
+        {
+            display: block;
+            height: 30px;
+            padding: 5px;
+            color: #ffffff;
+            font-size: 0.75em;
+            font-weight: bold;
+            font-family: Century Gothic, sans-serif;
+            text-decoration: none;
+        }
+
+            #web-nav ul li a:hover
+            {
+                background: #4b545f;
+                box-shadow: inset 0 0 8px #000;
+            }
+
+    #web-nav ul ul
+    {
+        background: #5f6975;
+        padding: 0;
+        position: static;
+        margin: 0;
+        box-shadow: inset 0 0 8px #000;
+        z-index: 500;
+        display: none;
+    }
+
+        #web-nav ul ul li
+        {
+            float: none;
+            display: block;
+            border-top: 1px solid #6b727c;
+            border-bottom: 1px solid #575f6a;
+            position: relative;
+        }
+
+            #web-nav ul ul li a
+            {
+                width: auto;
+                padding: 0 20px;
+                color: #fff;
+                font-size: 0.75em;
+                display: block;
+            }
+
+                #web-nav ul ul li a:hover
+                {
+                    background: #4b545f;
+                }
+
+
+    #web-wrapper
+    {
+        width: 90%;
+        margin-left: 3%;
+    }
+
+    #web-footer
+    {
+        margin-left: 2%;
+        width: 94%;
+    }
+
+    #web-nav
+    {
+        width: 100%;
+    }
+
+    #banner
+    {
+        width: 100%;
+        height: 10%;
+    }
+
+    #web-aside, #web-footer span a
+    {
+        display: none;
+    }
+
+    #main-cont
+    {
+        width: 100%;
+        margin-left: 2%;
+    }
+
+    .top
+    {
+        visibility: hidden;
+    }
+
+    #social
+    {
+        display: block;
+    }
+
+    #web-footer p
+    {
+        padding-top: 5px;
+        font-size: 0.75em;
+    }
+
+    #logo
+    {
+        display: none;
+    }
+
+    .person
+    {
+        float: left;
+        margin: 5px;
+    }
+ 
+ 
+   
+}
