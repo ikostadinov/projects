@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Math</title>
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.4.min.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/jquery.mobile-1.4.4.min.js"></script>
+        <style>
+            
+            #time{
+                float: left;
+            }
+
+            #switch-sound{
+                float: right;
+            }
+
+            #time{
+                margin-top: 13px;
+            }
+
+            #cont1:after{
+                display: block;
+                content: ' ';
+                clear: both;
+            }
+
+            #rw{
+                font-size: 20px;
+            }
+
+
+        </style>
+    </head>
+   <body>
+
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1>Math App</h1>
+  </div>
+     <a href="#pagetwo" class="ui-btn">New Game</a>
+    <!--<button onclick="exit()">Quit</button>-->
+</div>
+
+<div data-role="page" id="pagetwo">
+  <div data-role="header">
+  <h1>Math App</h1>
+ <!--<a href="#" class="ui-btn" data-rel="back">Back</a>-->
+  </div>
+
+  <div data-role="main" class="ui-content">
+      <label for="points">Max addend:</label>
+      <input type="range" name="points" onchange="showma()" id="points" value="10" min="10" max="100">
+      <a href="#pagethree" class="ui-btn" onClick="newGame()">Start</a>
+  </div>
+</div>
+
+<div data-role="page" id="pagethree">
+  <div data-role="header">
+  <h1>Math App</h1>
+ <!--<a href="#" class="ui-btn" data-rel="back">Back</a>-->
+  </div>
+
+  <div data-role="main" class="ui-content">
+       <div id="wrapper">
+                        <div id="cont1">
+                            <span id="time">5 seconds</span>
+                            <div id="switch-sound">
+                            <span>Sound:</span>
+                            <audio src="win.wav" id="win"></audio>
+                            <audio src="loss.wav" id="loss"></audio>
+                            <input type="checkbox" data-role="flipswitch" name="switch" id="switch" data-on-text="ON" data-off-text="OFF" onChange="mute()" checked>
+                        </div>     
+                    </div>
+        <table  id="tbl">
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr id="rw">
+                <td><span id="n1">32</span> <span id="sign">+</span> <span id="n2">5</span> = </td>
+            </tr>
+            <tr>
+                <td><input type="number" id="box1" value=""  autofocus></td>
+            </tr>
+            <tr>
+                <!--<td><button onClick="check()">Start</button></td>
+                <td><button onClick="timer()">Timer</button></td>
+                <td></td>-->
+            </tr>
+            <tr>
+               <!--<button onClick="stop()">STOP</button>-->
+                <td>
+                      <span id="score">Your score: 0</span>
+                </td>
+            </tr>
+        </table>       
+      </div>
+  </div>
+</div>
+ <script>
+/*==========  VARIABLES  ==========*/
+
+        var score = 0;
+        var interval = 0;
+        var result = 0;
+        var r1 = 0;
+        var r2 = 0;
+        var width2 = 10;
+        var win = document.getElementById("win");
+        var loss = document.getElementById("loss");
+        var muted = true;
+        var maxAddend = 10;
+
+function exit() {
+  if (confirm("Close Window?")) {
+    close();
+  }
+}
+
+        /*==========  TIMER  ==========*/
+function timer(){
+                var seconds_left = 5;
+        interval = setInterval(function() {
+            document.getElementById('time').innerHTML = --seconds_left+" seconds ";
+            if (seconds_left <= 0)
+            {
+                document.getElementById('time').innerHTML = '0';
+
+                clearInterval(interval);
+                check();
+                r1 = Math.floor((Math.random() * maxAddend) + 1);
+                r2 = Math.floor((Math.random() * maxAddend) + 1);
+                result = r1 + r2;
+                document.getElementById("n1").innerHTML = r1;
+                document.getElementById("n2").innerHTML = r2;
+                document.getElementById("box1").value = ' ';
+                console.log("New random1: " + r1, "New random2: " + r2, "New result: " + result +" new score: " + score);
+            }
+        }, 1000);
+            }
+
+/*==========  STOP TIMER  ==========*/
+             function stop(){
+            clearInterval(interval);
+        }
+function showma(maxAddend){
+    maxAddend = document.getElementById("points").value;
+    console.log("maxAddend: " + maxAddend); 
+}
+
+/*==========  MUTE SOUND  ==========*/
+function mute(){
+     var chsn = document.getElementById("switch");
+            if (chsn.checked) {
+                win.volume=1;
+                loss.volume = 1;
+                console.log('on');
+            }
+            else{
+                 win.volume=0;
+                loss.volume = 0;
+                console.log('off');
+            }
+}
+
+/*==========  CHECKING THE RESULT  ==========*/
+  function check(){
+            var userInput = document.getElementById("box1").value;
+                if (userInput == result) {
+                    win.play();
+                    $("h1").css("background-color","#17E861");
+                    //document.body.style.backgroundColor='green';
+                    score++;                
+                }
+                else{
+                    loss.play();
+                    $("h1").css("background-color","#FF3724");
+                    score--;
+                }
+
+                if (score < 0) {
+                        score = 0;
+                        gameover();
+                }
+
+                else if(interval == 1 || interval == 5)
+                {
+                   //createData();
+                }
+           timer();
+            document.getElementById("score").innerHTML = "Your score: " + score;
+            }
+
+            function gameover(){
+               alert("Game over"); 
+               $.mobile.changePage("#pageone");
+               timer2().stop();
+            }
+
+
+/*==========  RANDOMS  ==========*/
+           function randoms(){
+            maxAddend =  document.getElementById("points").value;
+            var random1 = Math.floor((Math.random() * maxAddend) + 1);//*20
+            var random2 = Math.floor((Math.random() * maxAddend) + 1);
+
+            result = random1 + random2;
+            //console
+            console.log("Random1: " + random1);
+            console.log("Random2: " + random2);
+            console.log("Result: " + result);
+            console.log("Score: "+ score);
+            console.log("maxnum:" + maxAddend);
+
+            document.getElementById("n1").innerHTML = random1;
+            document.getElementById("n2").innerHTML = random2;
+}
+
+/*==========  NEW GAME  ==========*/
+function newGame(){
+     
+        randoms();
+        timer();
+
+        }
+        </script>
+
+</body>
+</html>
